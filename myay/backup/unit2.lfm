@@ -1,0 +1,84 @@
+object Form2: TForm2
+  Left = 1105
+  Height = 346
+  Top = 318
+  Width = 515
+  Caption = 'Form2'
+  ClientHeight = 326
+  ClientWidth = 515
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.4'
+  object Chart1: TChart
+    Left = 32
+    Height = 200
+    Top = 88
+    Width = 300
+    AxisList = <    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object Chart1LineSeries1: TLineSeries
+    end
+  end
+  object Label1: TLabel
+    Left = 64
+    Height = 15
+    Hint = 'Отрезок'
+    Top = 32
+    Width = 14
+    Caption = 'gg'
+    OnClick = Label1Click
+  end
+  object Label3: TLabel
+    Left = 224
+    Height = 1
+    Hint = 'Шаг'
+    Top = 32
+    Width = 1
+  end
+  object MainMenu1: TMainMenu
+    Left = 416
+    Top = 24
+    object MenuItem1: TMenuItem
+      Caption = 'График'
+      OnClick = MenuItem1Click
+      object MenuItem5: TMenuItem
+        Caption = 'y=5x/6x+3'
+        OnClick = MenuItem5Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'y=cos(4x)'
+        OnClick = MenuItem6Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Отрезок'
+      OnClick = MenuItem2Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Шаг'
+      OnClick = MenuItem3Click
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Выполнить'
+      OnClick = MenuItem4Click
+    end
+    object MenuItem7: TMenuItem
+      Caption = 'Очистить'
+      OnClick = MenuItem7Click
+    end
+  end
+end

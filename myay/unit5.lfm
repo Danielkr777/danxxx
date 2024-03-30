@@ -1,0 +1,21 @@
+object Form5: TForm5
+  Left = 688
+  Height = 240
+  Top = 240
+  Width = 320
+  Caption = 'Form5'
+  Menu = MainMenu1
+  LCLVersion = '2.2.0.4'
+  object MainMenu1: TMainMenu
+    Left = 264
+    Top = 48
+    object MenuItem1: TMenuItem
+      Caption = '1'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = '2'
+      OnClick = MenuItem2Click
+    end
+  end
+end

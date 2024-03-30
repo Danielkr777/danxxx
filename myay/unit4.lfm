@@ -1,0 +1,33 @@
+object Form4: TForm4
+  Left = 330
+  Height = 240
+  Top = 145
+  Width = 681
+  Caption = 'Form4'
+  ClientHeight = 240
+  ClientWidth = 681
+  LCLVersion = '2.2.0.4'
+  object Label1: TLabel
+    Left = 70
+    Height = 15
+    Top = 69
+    Width = 22
+    Caption = 'Шаг'
+  end
+  object Edit1: TEdit
+    Left = 216
+    Height = 23
+    Top = 64
+    Width = 80
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 344
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Готово'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end
